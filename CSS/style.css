@@ -11,7 +11,7 @@
 li, a, button {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 22px;
     color: #434C45;
     text-decoration: none;
 }
@@ -20,7 +20,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 10%;
+    padding: 30px 15%;
 }
 
 .nav-links {
@@ -40,6 +40,7 @@ nav {
     color: #00E434;
     text-decoration: underline solid transparent;
     transition: text-decoration 1s ease;
+    font-weight: 700;
 }
 
 button {
@@ -53,6 +54,7 @@ button {
 
 button:hover {
     background-color: rgba(0,228,52,0.5);
+    font-weight: 700;
 }
 
 .logo {
@@ -69,18 +71,50 @@ button:hover {
     align-items: center;
     background: center center cover no-repeat;
     background-size: contain;
-    overflow: hidden;
-    /* zoom: 85%; */
-    border: solid 1.5px rgba(0,228,52,1);
-    
+    overflow: hidden; 
 }
 
-/* picture {
-    width: 100%;
-    height: auto;
+hr {
+    color: #434C45;
 }
 
-.background-img {
-    
-    
-} */
+footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(0, 600px) 1fr; 
+}
+
+footer p {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #434C45;
+    text-decoration: none;
+    text-align: center;
+}
+
+.fa {
+    margin-top: 80px;
+    padding: 40px;
+    font-size: 80px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-site-map {
+    margin: 30px 100px 30px 130px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    text-decoration: none;
+    list-style: none;
+}
