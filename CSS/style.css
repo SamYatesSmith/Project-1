@@ -54,7 +54,7 @@ button {
 
 button:hover {
     background-color: rgba(0,228,52,0.5);
-    font-weight: 700;
+    font-weight: 650;
 }
 
 .logo {
@@ -65,13 +65,30 @@ button:hover {
     border: 1px solid black;
 }
 
-.background-img {
+.background-img-container {
+    border-top:1px solid #434C45;
+    border-bottom: 1px solid #434C45;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: center center cover no-repeat;
+    align-items: center; 
     background-size: contain;
     overflow: hidden; 
+}
+
+.background-img {
+    background: center center cover no-repeat;
+    display: block
+}
+
+.tagline-container {
+    font-family: "Montserrat Alternates", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
 }
 
 hr {
@@ -80,24 +97,28 @@ hr {
 
 footer {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr minmax(0, 600px) 1fr; 
+    grid-template-rows: 0.6fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+    column-gap: 10px;
+    min-height: 30vh;
+    background: linear-gradient(rgb(67, 124, 205), rgb(69, 165, 255));
 }
 
 footer p {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 28px;
     color: #434C45;
     text-decoration: none;
     text-align: center;
+    padding-left: 10px;
 }
 
 .fa {
     margin-top: 80px;
     padding: 40px;
     font-size: 80px;
-    width: 80px;
+    width: 100px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -118,3 +139,20 @@ footer p {
     text-decoration: none;
     list-style: none;
 }
+
+#location-container {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    justify-content: center;
+
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 300px;
+    width: 550px;
+}
+
