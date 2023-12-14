@@ -6,10 +6,11 @@
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
-li, a, button {
-    font-family: "Montserrat Alternates", sans-serif;
+.nav-list, .nav-anchors, button {
+    
     font-weight: 500;
     font-size: 22px;
     color: #434C45;
@@ -30,8 +31,7 @@ nav {
     justify-content: space-between;
 }
 
-.nav-links li a {
-    display: inline-block;
+.nav-links, .nav-anchors {
     padding: 0px 20px;
     transition: all 0.3s ease 0s;
 }
@@ -65,57 +65,78 @@ button:hover {
     border: 1px solid black;
 }
 
-.background-img-container {
-    border-top:1px solid #434C45;
-    border-bottom: 1px solid #434C45;
-    position: relative;
+#sales-offer-container h5 {
+    color:#434C45;
+    font-style: italic;
+    border: 1px solid #434C45;
+    box-shadow: 5px 5px 10px 0px #daf6d9, -5px -5px 10px 0px #dff2e8;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    background-size: contain;
-    overflow: hidden; 
-}
-
-.background-img {
-    background: center center cover no-repeat;
-    display: block
-}
-
-.tagline-container {
-    font-family: "Montserrat Alternates", sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    justify-content:center;
     text-align: center;
 }
 
-hr {
-    color: #434C45;
+.background-img-container {
+    
+    border-bottom: 1px solid #434C45;
+    text-align: center;
+    position: relative;
+}
+
+.background-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.tagline {
+    width: 100%;
+    font-size: 35px;
+    font-weight: 650;
+    text-indent: 20px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    padding: 8px 12px;
+    box-shadow: 5px 5px 10px 0px #daf6d9, -5px -5px 10px 0px #dff2e8; 
+    opacity: 0.8;
+    background-color: #daf6d9;
+    
 }
 
 footer {
     display: grid;
-    grid-template-rows: 0.6fr;
-    grid-template-columns: 1fr 1fr 1fr; 
-    column-gap: 10px;
-    min-height: 30vh;
-    background: linear-gradient(rgb(67, 124, 205), rgb(69, 165, 255));
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    /* min-height: 20vh; */
+    background-image: linear-gradient(to top, #daf6d9, #daf5de, #dbf4e2, #ddf3e5, #dff2e8, #e0f2ec, #e3f2ef, #e7f1f1, #ebf2f4, #eff2f5, #f3f4f5, #f5f5f5);
 }
 
-footer p {
-    font-family: "Montserrat Alternates", sans-serif;
+.section-grid-containers {
+    margin: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    justify-content: center;
+    /* padding: 20px; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 0.25px solid #434C45;
+}
+
+.foot-paras {
+    padding-top: 10px;;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 18px;
     color: #434C45;
     text-decoration: none;
     text-align: center;
-    padding-left: 10px;
+    
 }
 
 .fa {
-    margin-top: 80px;
     padding: 40px;
     font-size: 80px;
     width: 100px;
@@ -124,35 +145,55 @@ footer p {
     text-decoration: none;
   }
 
-.footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fa-facebook {
+    color: darkblue;
 }
 
-.footer-site-map {
-    margin: 30px 100px 30px 130px;
+.fa-twitter {
+    color: #657EE0;
+}
+.fa-instagram {
+    color: lightcoral;
+}
+
+.fa-snapchat {
+    color: rgb(225, 225, 57);
+}
+
+#social-logo-container {
+    padding-right: 20px;
+}
+
+#footer-site-map {
+    width: auto;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-rows: 50px 50px 50px 50px 50px;
-    text-decoration: none;
+    height: auto;
     list-style: none;
-}
-
-#location-container {
-    display: grid;
-    grid-template-rows: 0.3fr 1fr;
     justify-content: center;
-
 }
 
-.location {
+.site-map-anchor {
+    text-decoration: none;
+    font-size: 13px;
+    color: #434C45;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    height: 300px;
-    width: 550px;
+}
+
+.site-map-anchor:hover {
+    color: #00E434;
+    text-decoration: underline solid transparent;
+    transition: text-decoration 1s ease;
+}
+
+#location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    height: auto;
+    width: auto;
+    border-radius: 8px;
 }
 
