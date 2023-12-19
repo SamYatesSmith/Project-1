@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.nav-list, .nav-anchors, button {
+    
+    font-weight: 500;
+    font-size: 22px;
+    color: #434C45;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links, .nav-anchors {
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #628A60;
+    text-decoration: underline solid transparent;
+    transition: text-decoration 1s ease;
+    font-weight: 700;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #628A60;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: whitesmoke;
+}
+
+button:hover {
+    background-color: rgba(0,228,52,0.5);
+    box-shadow: 0 4px 8px #434C45;
+}
+
+.logo {
+    cursor: pointer;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}

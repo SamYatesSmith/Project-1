@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/style.css" font-family="@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');">
+    <link rel="stylesheet" href="../CSS/ourstory.css" font-family="@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HappyBabyBelly</title>
   </head>
@@ -15,24 +15,30 @@
         <nav>
             <img class="logo" src="../media/images/istockphoto-486550195-1024x1024.jpg" alt="logo">
             <ul class="nav-links">
-                <li class="nav-list"><a href="#" class="nav-anchors">Our Story</a></li>
+                <li class="nav-list"><a href="../HTML/index.html" class="nav-anchors">Home</a></li>
                 <li class="nav-list"><a href="#" class="nav-anchors">Products</a></li>
-                <li class="nav-list"><a href="#" class="nav-anchors">News</a></li>
-                <li class="nav-list"><a href="#" class="nav-anchors">Shop</a></li>
-                <li class="nav-list"><a href="#" class="nav-anchors">Sample Form</a></li>
+                <li class="nav-list"><a href="../HTML/form.html" class="nav-anchors">Sample Form</a></li>
             </ul>
             <a class="cta" href="#"><button>Contact</button></a>
         </nav>    
     </header>    
 
     <main>
-        <div>
-            <h1>Happy Baby Bellies story so far...</h1>
+
+<!-- Headline below header, highlighting the page's purpose -->
+        <div id="headline">
+            <h2 class="top-heading">Happy Baby Belly</h2>
+            <h3 class="bottom-heading">Where have we come from and where are we going?</h3>
+            </div>
         </div>
+        
 <!-- what we're about -->
         <section id="about">
             <div class="about-container">
-                <p class="para-text">
+                <div class="h2-titleHeading">
+                    <h1>Happy Baby Bellies story so far...</h1>
+                </div>
+                <p class="about-text">
                     Established during the COVID pandemic, where time seemed endless, "Happy Baby Belly" is a simple concept.  We prepare your babies meals based on their preferences and your available time to prepare the meals our boxed ingredients offer.
                     Our <a href="#ingredients">ingredients</a> are all locally sourced to wherever you live.  We achieve this with our wide network of suppliers, whom all benefit from our mission of ensuring our children eat wholesome, organic and tasty food. 
                     We first started HBB after performing a text on a well known pouched product which was listed as 'baby food'.  What we found worried us as the trace vitamins and minerals all our babies need to grow big and strong were in incredibly short supply.  
@@ -43,15 +49,16 @@
             </div>
         </section>
 
-        <div>
-            <h2>Our Future Pledge</h2>
-        </div>
+
 <!-- our future pledge -->
         <aside id="future">
             <div class="future-container">
-                <p class="para-text">
-                    All our food is lovingly prepared.  Our food will always be so.  That is ou primary future pledge.  The assurance for this comes from our desire to support local producers in your area.  We essentially hope to achieve this by offering our local suppliers an alternative to the meager rates they receive from large retailers.  
-                    We believe in our pledge and are therefore not driven by large profits.  We do not need to be.  We have a flat hierarchical structure and our overheads are small owing to the technology we use to procure and distribute our products. We are looking to improve what our babies all eat, not become millionaires! 
+                <div id="future-heading">
+                    <h2>Our Future Pledge</h2>
+                </div>
+                <p class="future-text">
+                    All our food is lovingly prepared.  Our food will always be so.  That is our primary future pledge.  The assurance for this comes from our desire to support local producers in your area.  We essentially hope to achieve this by offering our local suppliers an alternative to the meager rates they receive from large retailers.  
+                    We believe in our pledge and are dedicated to ensuring parents nationwide are confident in their childs' diet.
                 </p>
                 <div class="future-collection">
                     <img class="future-img" src="../media/images/pexels-rdne-stock-project-7781976.jpg" alt="A happy female picking herbs from a tree">
@@ -62,18 +69,18 @@
             </div>
         </aside>
 
-        <div>
-            <h2>Our ingredients and their source</h2>
-        </div>
+
 <!-- Where our ingredients are sourced from -->
         <section id="ingredients">
             <div class="ingredients-container">
-                <p class="para-text">
+                <div class="h2-titleHeading">
+                    <h2>Our ingredients and their source</h2>
+                </div>
+                <p class="ingredients-text">
                     As we have discussed in our <a href="#about">about</a> section at the top of the page, we source all ingredients within a set radius of your address.  Our clever software allows us to automate the customer request and furthermore, automate the delivery process after the box you purchase is packaged and shipped.  
-                    This means that our carbon footprint is minimal - we wont lie and say we are "net zero" as we don't pay to offset the carbon we do produce, rather we prefer to keep this carbon output as low as it can possibly be in the hop ethat our cusomters appreciate that we are supporting local farmers and wholesalers, rather than driving our produce 
-                    around the country and then pretending not to be creating carbon by simply offsetting its creation.  
-                    Our boxes are seasonal so our custom are aware that they are unable to eat produce that is not grown close to their homes, therefore your offerings are relative to what is grown within a cetain radius of your home.  We ar eagainst flying produce from the other side of the world as this goes against our aforementioned goal of managing our output and supporting local wholesellers. 
-
+                    This means that our carbon footprint is minimal - we wont lie and say we are "net zero" as we don't pay to offset the carbon we do produce, rather we prefer to keep this carbon output as low as it can possibly be in the hope that our customers appreciate that we are supporting local farmers and wholesalers, rather than driving our produce 
+                    around the country and then pretending not to be creating carbon by simply offsetting its use.  
+                    Our boxes are seasonal so our custom are aware that they are unable to eat produce that is not grown close to their homes, therefore your offerings are relative to what is grown within a certain radius of your home.  We are against flying produce from the other side of the world as this goes against our aforementioned goal of managing our output and supporting local wholesalers.
                 </p>
                 <div class="ingredients-collection">
                     <img class="ingredients-img" src="../media/images/pexels-engin-akyurt-1435904.jpg" alt="Tasty ingredients ready to be put into our boxes">
@@ -83,5 +90,37 @@
                 </div>
             </div>
         </section>
-
     </main>
+
+    <footer>
+     
+        <section class="section-grid-containers" id="socials">
+            <p class="foot-paras">Get yourself connected</p>
+            <div id="social-logo-container">
+                <a href="https://en-gb.facebook.com/" target=”_blank” class="fa fa-facebook fa-4x"></a>
+                <a href="https://twitter.com/?lang=en-GB" target=”_blank” class="fa fa-twitter fa-4x"></a>
+                <a href="https://www.instagram.com/" target=”_blank” class="fa fa-instagram fa-4x"></a>
+                <a href="https://www.snapchat.com/" target=”_blank” class="fa fa-snapchat fa-4x"></a>
+            </div>
+        </section>
+
+        <Section class="section-grid-containers" id="site-map">
+            <p class="foot-paras">Site map</p>
+            <ul id="footer-site-map">
+                <li><a class="site-map-anchor" href="#">Our Story</a></li>
+                <li><a class="site-map-anchor" href="#">Products</a></li>
+                <li><a class="site-map-anchor" href="#">News</a></li>
+                <li><a class="site-map-anchor" href="#">Shop</a></li>
+                <li><a class="site-map-anchor" href="#">Sample Form</a></li>
+            </ul>
+        </Section>
+
+        <section class="section-grid-containers" id="location-container">
+            <p class="foot-paras">Where to find us?</p>
+            <iframe  id="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6269.147014010986!2d55.42580716887603!3d-4.612102196624164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22e028e7b0aad8fd%3A0x4535f0748872cb62!2sBeau%20Vallon%20Beach!5e0!3m2!1sen!2suk!4v1701965899935!5m2!1sen!2suk" 
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+        </section>
+
+    </footer>

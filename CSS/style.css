@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -37,7 +38,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #00E434;
+    color: #628A60;
     text-decoration: underline solid transparent;
     transition: text-decoration 1s ease;
     font-weight: 700;
@@ -45,16 +46,17 @@ nav {
 
 button {
     padding: 15px 30px;
-    background-color: rgba(0,228,52,1);
+    background-color: #628A60;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    color: whitesmoke;
 }
 
 button:hover {
     background-color: rgba(0,228,52,0.5);
-    font-weight: 650;
+    box-shadow: 0 4px 8px #434C45;
 }
 
 .logo {
@@ -69,7 +71,7 @@ button:hover {
     color:#434C45;
     font-style: italic;
     border: 1px solid #434C45;
-    box-shadow: 5px 5px 10px 0px #daf6d9, -5px -5px 10px 0px #dff2e8;
+    box-shadow: 5px 5px 10px 0px #628A60;
     display: flex;
     justify-content:center;
     text-align: center;
@@ -95,7 +97,7 @@ button:hover {
     font-weight: 650;
     text-indent: 20px;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -103,7 +105,9 @@ button:hover {
     padding: 8px 12px;
     box-shadow: 5px 5px 10px 0px #daf6d9, -5px -5px 10px 0px #dff2e8; 
     opacity: 0.8;
-    background-color: #daf6d9;
+    background-color: #628A60;
+    font-family: 'Kalam', cursive;
+    color: whitesmoke;
     
 }
 
@@ -112,7 +116,7 @@ footer {
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     /* min-height: 20vh; */
-    background-image: linear-gradient(to top, #daf6d9, #daf5de, #dbf4e2, #ddf3e5, #dff2e8, #e0f2ec, #e3f2ef, #e7f1f1, #ebf2f4, #eff2f5, #f3f4f5, #f5f5f5);
+    background-image: linear-gradient(to top, #628A60, whitesmoke);
 }
 
 .section-grid-containers {
