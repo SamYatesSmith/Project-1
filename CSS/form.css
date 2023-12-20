@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Kalam', cursive;;
 }
 
 .nav-list, .nav-anchors, button {
@@ -65,3 +65,25 @@ button:hover {
     border-radius: 10px;
     border: 1px solid black;
 }
+
+/* main {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: #628A60;
+    display: block;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+}
+
+.input {
+    caret-color: #628A60;
+}
+.questions {
+    height: auto;
+    width: 80%;
+    margin: 15px;
+} */

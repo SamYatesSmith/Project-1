@@ -9,7 +9,7 @@
     <title>HappyBabyBelly</title>
   </head>
     
-  <body>
+<body>
 
     <header>    
         <nav>
@@ -25,7 +25,182 @@
     </header> 
 
     <main>
-        <form>
+        <section>
+            <div class="mainTitle">
+                <h1>User Survey - Service Requests</h1>
+                <p>We would like to know what you're looking for and where you're based? Once we understand these things, we'll get setup for sending out your locally sourced, specially prepped BabyBoxes!</p>
+            </div>
+        </section>
+
+        <form action="https://www.formresponsedestination" method="POST">
             
+            <fieldset>
+                <div class="questions">
+
+                    <legend>Your Details</legend>
+
+                    <label for="first-Name">Your first name?</label>
+                    <input type="text" id="fName" name="fName" placeholder="Enter your name">
+
+                    <label for="second-name">Your surname?</label>
+                    <input type="text" id="sName" name="sName" placeholder="Enter your surname">
+
+                    <label for="email">Your email address?</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+<!-- I hope in the future that i will understand geolocation API's well enough to not have to write the below in full! -->
+
+                    <label for="location">Which county do you live in?</label>
+                    <select id="dropdown" name="location">
+                        <!-- <placeholder>Please Select your county</placeholder> -->
+                        <option value="Bedfordshire">Bedfordshire</option>
+                        <option value="Berkshire">Berkshire</option>
+                        <option value="Bristol">Bristol</option>
+                        <option value="Buckinghamshire">Buckinghamshire</option>
+                        <option value="Cambridgeshire">Cambridgeshire</option>
+                        <option value="Cheshire">Cheshire</option>
+                        <option value="Cornwall">Cornwall</option>
+                        <option value="Cumbria">Cumbria</option>
+                        <option value="Derbyshire">Derbyshire</option>
+                        <option value="Devon">Devon</option>
+                        <option value="Dorset">Dorset</option>
+                        <option value="Durham">Durham</option>
+                        <option value="East Sussex">East Sussex</option>
+                        <option value="Essex">Essex</option>
+                        <option value="Gloucestershire">Gloucestershire</option>
+                        <option value="Greater London">Greater London</option>
+                        <option value="Greater Manchester">Greater Manchester</option>
+                        <option value="Hampshire">Hampshire</option>
+                        <option value="Herefordshire">Herefordshire</option>
+                        <option value="Hertfordshire">Hertfordshire</option>
+                        <option value="Isle of Wight">Isle of Wight</option>
+                        <option value="Kent">Kent</option>
+                        <option value="Lancashire">Lancashire</option>
+                        <option value="Leicestershire">Leicestershire</option>
+                        <option value="Lincolnshire">Lincolnshire</option>
+                        <option value="City of London">City of London</option>
+                        <option value="Merseyside">Merseyside</option>
+                        <option value="Norfolk">Norfolk</option>
+                        <option value="Northamptonshire">Northamptonshire</option>
+                        <option value="Northumberland">Northumberland</option>
+                        <option value="North Yorkshire">North Yorkshire</option>
+                        <option value="Nottinghamshire">Nottinghamshire</option>
+                        <option value="Oxfordshire">Oxfordshire</option>
+                        <option value="Rutland">Rutland</option>
+                        <option value="Shropshire">Shropshire</option>
+                        <option value="Somerset">Somerset</option>
+                        <option value="South Yorkshire">South Yorkshire</option>
+                        <option value="Staffordshire">Staffordshire</option>
+                        <option value="Suffolk">Suffolk</option>
+                        <option value="Surrey">Surrey</option>
+                        <option value="Tyne and Wear">Tyne and Wear</option>
+                        <option value="Warwickshire">Warwickshire</option>
+                        <option value="West Midlands">West Midlands</option>
+                        <option value="West Sussex">West Sussex</option>
+                        <option value="West Yorkshire">West Yorkshire</option>
+                        <option value="Wiltshire">Wiltshire</option>
+                        <option value="Worcestershire">Worcestershire</option>
+                        <option value="Yorkshire">Yorkshire</option>
+                    </select>
+
+                </div>  
+
+            </fieldset>
+
+            <fieldset>
+                <div class="questions">
+
+                    <h3>Could we ask after a few queries regarding your expectations?</h3>
+
+                    <legend>How old is your child?</legend>
+
+                    <label>
+                        <input type="radio" name="age" value="Option 1"> 0-18 Months
+                      </label>
+                      <label>
+                        <input type="radio" name="age" value="Option 2"> 18 Months - 4 years old
+                      </label>
+                      <label>
+                        <input type="radio" name="age" value="Option 3"> 4 - 11 years old
+                      </label>
+
+                    <legend>What're you looking for from this service?</legend>
+
+                      <label>
+                        <input type="radio" name="lookingFor" value="Ingredients"> Just the basic ingredients
+                      </label>
+                      <label>
+                        <input type="radio" name="lookingFor" value="Ingredients+recipes"> Ingredients and recipes
+                      </label>
+                      <label>
+                        <input type="radio" name="lookingFor" value="ingredients+recipes+video"> ingredients, recipes and video cooking example/guide
+                      </label>
+
+                    <legend>How many of your child daily meals are you expecting your food box to cater for?</legend>
+
+                      <label>
+                        <input type="checkbox" name="#ofMeals" value="breakfast"> 1 (Breakfast)
+                      </label>
+                      <label>
+                        <input type="checkbox" name="#ofMeals" value="lunch"> 2 (Lunch)
+                      </label>
+                      <label>
+                        <input type="checkbox" name="#ofMeals" value="supper"> 3 (Supper)
+                      </label>
+                      <label>
+                        <input type="radio" name="#ofMeals" value="all"> All three sittings
+                      </label>
+                      <label>
+                        <input type="textarea" name="#ofMeals" value="other"> Other
+                      </label>
+
+                    <legend>What are you expecting to spend on a food box for 7 days worth of meals for your child?</legend>
+
+                      <label>
+                        <input type="radio" name="spend" value="20-25"> £20-£25
+                      </label>
+                      <label>
+                        <input type="radio" name="spend" value="25-50"> £25-£50
+                      </label>
+                      <label>
+                        <input type="radio" name="spend" value="50-85"> £50-£85
+                      </label>
+
+                    <legend>Could we enquire as whether your child hs any allergens we should be aware of?</legend>
+
+                      <label>
+                        <input type="checkbox" name="peanuts" value="peanuts"> Peanuts
+                      </label>
+                      <label>
+                        <input type="checkbox" name="treeNuts" value="treenuts"> Tree Nuts
+                      </label>
+                      <label>
+                        <input type="checkbox" name="dairy" value="dairy"> Dairy
+                      </label>
+                      <label>
+                        <input type="checkbox" name="gluten" value="gluten"> Gluten
+                      </label>
+                      <label>
+                        <input type="checkbox" name="soy" value="soy"> Soy
+                      </label>
+
+                    <legend>We are currently producing a separate app for commercial use that allows restaurants to be aware of any allergens prior to you ordering their service.  Would you like further information on this innovation?</legend>
+                  
+                      <label>
+                        <input type="radio" name="furtherinfo" value="yes"> Yes
+                      </label>
+                      <label>
+                        <input type="radio" name="furtherinfo" value="no"> No
+                      </label>
+
+                      <!-- Submit button -->
+                      <button type="button">Submit</button>
+
+                </div>
+            </fieldset>
+
         </form>
+
     </main>
+
+</body>
