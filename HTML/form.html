@@ -17,14 +17,14 @@
             <ul class="nav-links">
                 <li class="nav-list"><a href="../HTML/index.html" class="nav-anchors">Home</a></li>
                 <li class="nav-list"><a href="../HTML/ourstory.html" class="nav-anchors">Our Story</a></li>
-                <li class="nav-list"><a href="#" class="nav-anchors">Products</a></li>
-                <li class="nav-list"><a href="#" class="nav-anchors">Sample Form</a></li>
+                <li class="nav-list"><a href="../HTML/products.html" class="nav-anchors">Products</a></li>
             </ul>
             <a class="cta" href="#"><button>Contact</button></a>
         </nav>    
     </header> 
 
     <main>
+      <div class="formBackdrop">
         <section>
             <div class="mainTitle">
                 <h1>User Survey - Service Requests</h1>
@@ -32,12 +32,17 @@
             </div>
         </section>
 
+      <div class="grid-container">  
+        <div id="img-container">
+          <img id="righthandside-img" src="../media/images/pexels-petra-nesti-12775190.jpg" rel="Rainbow on a farm"> 
+        </div>
+
         <form action="https://www.formresponsedestination" method="POST">
             
-            <fieldset>
-                <div class="questions">
+            <fieldset class="details">
+                <div>
 
-                    <legend>Your Details</legend>
+                    <legend class="containerHeading">Your Details</legend>
 
                     <label for="first-Name">Your first name?</label>
                     <input type="text" id="fName" name="fName" placeholder="Enter your name">
@@ -106,13 +111,14 @@
                 </div>  
 
             </fieldset>
-
+          </div>
             <fieldset>
+
                 <div class="questions">
 
                     <h3>Could we ask after a few queries regarding your expectations?</h3>
 
-                    <legend>How old is your child?</legend>
+                    <legend class="containerHeading">How old is your child?</legend>
 
                     <label>
                         <input type="radio" name="age" value="Option 1"> 0-18 Months
@@ -124,7 +130,7 @@
                         <input type="radio" name="age" value="Option 3"> 4 - 11 years old
                       </label>
 
-                    <legend>What're you looking for from this service?</legend>
+                    <legend class="containerHeading">What're you looking for from this service?</legend>
 
                       <label>
                         <input type="radio" name="lookingFor" value="Ingredients"> Just the basic ingredients
@@ -136,7 +142,7 @@
                         <input type="radio" name="lookingFor" value="ingredients+recipes+video"> ingredients, recipes and video cooking example/guide
                       </label>
 
-                    <legend>How many of your child daily meals are you expecting your food box to cater for?</legend>
+                    <legend class="containerHeading">How many of your child daily meals are you expecting your food box to cater for?</legend>
 
                       <label>
                         <input type="checkbox" name="#ofMeals" value="breakfast"> 1 (Breakfast)
@@ -151,10 +157,10 @@
                         <input type="radio" name="#ofMeals" value="all"> All three sittings
                       </label>
                       <label>
-                        <input type="textarea" name="#ofMeals" value="other"> Other
+                        <input type="textarea" name="#ofMeals" value="Other">
                       </label>
 
-                    <legend>What are you expecting to spend on a food box for 7 days worth of meals for your child?</legend>
+                    <legend class="containerHeading">What are you expecting to spend on a food box for 7 days worth of meals for your child?</legend>
 
                       <label>
                         <input type="radio" name="spend" value="20-25"> £20-£25
@@ -166,7 +172,7 @@
                         <input type="radio" name="spend" value="50-85"> £50-£85
                       </label>
 
-                    <legend>Could we enquire as whether your child hs any allergens we should be aware of?</legend>
+                    <legend class="containerHeading">Could we enquire as whether your child or children have any allergens we should be aware of?</legend>
 
                       <label>
                         <input type="checkbox" name="peanuts" value="peanuts"> Peanuts
@@ -184,7 +190,7 @@
                         <input type="checkbox" name="soy" value="soy"> Soy
                       </label>
 
-                    <legend>We are currently producing a separate app for commercial use that allows restaurants to be aware of any allergens prior to you ordering their service.  Would you like further information on this innovation?</legend>
+                    <legend class="containerHeading">We are currently producing a separate app for commercial use that allows restaurants to be aware of any allergens prior to you ordering their service.  Would you like further information on this innovation?</legend>
                   
                       <label>
                         <input type="radio" name="furtherinfo" value="yes"> Yes
@@ -200,7 +206,40 @@
             </fieldset>
 
         </form>
-
+      </div>
     </main>
 
 </body>
+
+<footer>
+     
+  <section class="section-grid-containers" id="socials">
+      <p class="foot-paras">Get yourself connected</p>
+      <div id="social-logo-container">
+          <a href="https://en-gb.facebook.com/" target=”_blank” class="fa fa-facebook fa-4x"></a>
+          <a href="https://twitter.com/?lang=en-GB" target=”_blank” class="fa fa-twitter fa-4x"></a>
+          <a href="https://www.instagram.com/" target=”_blank” class="fa fa-instagram fa-4x"></a>
+          <a href="https://www.snapchat.com/" target=”_blank” class="fa fa-snapchat fa-4x"></a>
+      </div>
+  </section>
+
+  <Section class="section-grid-containers" id="site-map">
+      <p class="foot-paras">Site map</p>
+      <ul id="footer-site-map">
+          <li><a class="site-map-anchor" href="#">Our Story</a></li>
+          <li><a class="site-map-anchor" href="#">Products</a></li>
+          <li><a class="site-map-anchor" href="#">News</a></li>
+          <li><a class="site-map-anchor" href="#">Shop</a></li>
+          <li><a class="site-map-anchor" href="#">Sample Form</a></li>
+      </ul>
+  </Section>
+
+  <section class="section-grid-containers" id="location-container">
+      <p class="foot-paras">Where to find us?</p>
+      <iframe  id="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6269.147014010986!2d55.42580716887603!3d-4.612102196624164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22e028e7b0aad8fd%3A0x4535f0748872cb62!2sBeau%20Vallon%20Beach!5e0!3m2!1sen!2suk!4v1701965899935!5m2!1sen!2suk" 
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      
+  </section>
+
+</footer>
