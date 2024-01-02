@@ -67,20 +67,95 @@ button:hover {
 
 /* Main */
 
-  .product-grid {
+main {
+    background-color: #628A60;
+    padding: 10px;
+}
+
+.recipe-container, .product-grid {
+    color: whitesmoke;
+    background-color: #95AA8A;
+    height: auto;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    padding: 3%;
+    border-radius: 8px;
+}
+
+#future-product-container {
+    width: 100%;
+    /* height: 30vh; */
+    background-color: #628A60;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-heading {
+    color:#FFFFFF;
+    font-weight: 100;
+    padding-top: 2%;
+    font-size: 3.5rem;
+    }
+
+.bottom-heading {
+    color:#FFFFFF;
+    font-size: 1.3rem;
+    padding: 2%;
+    }
+
+.recipe-container {
+    /* font-size: 19px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #434C45;
+    padding: 40px;
+    margin: 10px;
+}
+
+.recipe-list {
+    line-height: 2em;
+    font-size: 19px;
+    margin-left: 50px;
+}
+
+.recipe-vid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #434C45;
+    padding: 2%;
+    border-radius: 8px;
+    background-color: rgb(221, 229, 182);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+#recipe-vid {
+    
+}
+
+.product-grid {
+    color:#434C45;
     display: flex;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15%;
     align-items: center;
     justify-content:center;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 10px;
+    border: 1px solid #434C45;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    
   }
 
-  .product {
+.product {
     border: 1px solid #ddd;
     padding: 15px;
     text-align: center;
+    border: 1px solid #434C45;
+    padding: 3%;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(221, 229, 182);
   }
 
 /* footer */
@@ -88,12 +163,11 @@ button:hover {
   footer {
     width: 100%;
     bottom: 0;
-    position: fixed;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     /* min-height: 20vh; */
-    background-image: linear-gradient(to top, #628A60, whitesmoke);
+    background-image: linear-gradient(to bottom, #628A60, whitesmoke);
 }
 
 .section-grid-containers {
@@ -106,6 +180,7 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 0.25px solid whitesmoke;
     color: whitesmoke;
+    background-color: whitesmoke;
 }
 
 .foot-paras {
